@@ -1,8 +1,7 @@
 import Vue from "vue";
 import VueRouter from "vue-router";
 import HomeView from "../views/HomeView.vue";
-import store from '@/store/index';
-
+import store from "@/store/index";
 
 Vue.use(VueRouter);
 
@@ -20,26 +19,26 @@ const routes = [
     // which is lazy-loaded when the route is visited.
     component: () =>
       import(/* webpackChunkName: "about" */ "../views/AboutView.vue"),
-      meta: {
-        authRequired: true
-    }
+    meta: {
+      authRequired: true,
+    },
   },
-    {
-      path: '/menu',
-      name: 'menu-view',
-      component: () =>
+  {
+    path: "/menu",
+    name: "menu-view",
+    component: () =>
       import(/* webpackChunkName: "menu" */ "../views/MenuView.vue"),
   },
   {
-      path: '/sign-in',
-      name: 'signin-view',
-      component: () =>
+    path: "/sign-in",
+    name: "signin-view",
+    component: () =>
       import(/* webpackChunkName: "signin" */ "../views/SigninView.vue"),
   },
   {
-      path: '/join',
-      name: 'join-view',
-      component: () =>
+    path: "/join",
+    name: "join-view",
+    component: () =>
       import(/* webpackChunkName: "join" */ "../views/JoinView.vue"),
   },
 ];
@@ -50,16 +49,18 @@ const router = new VueRouter({
   routes,
 });
 router.beforeEach((to, from, next) => {
-  if (to.matched.some(record => record.meta.authRequired)) {
-      if (!store.state.isAuthenticated) {
-          next({
-              path: '/sign-in'
-          });
-      } else {
-          next();
-      }
+  if (to.matched.some((record) => record.meta.authRequired)) {
+    if (!store.state.isAuthenticated) {
+      next({
+        path: "/sign-in",
+      });
+    } else {
+      next({
+        path: "/",
+      });
+    }
   } else {
-      next();
+    next();
   }
 });
 

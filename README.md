@@ -22,7 +22,8 @@ npm run lint
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
--------------------after zipping---------------------------
+
+------------------------------After zipping---------------------------
 npm install axios --save
 npm audit fix
 

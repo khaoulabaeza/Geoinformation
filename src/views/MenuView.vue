@@ -1,20 +1,20 @@
 <template>
-    <div>
-        <home-plans></home-plans>
-        <meal-recipes></meal-recipes>
-    </div>
+  <div>
+    <home-plans></home-plans>
+    <meal-recipes></meal-recipes>
+  </div>
 </template>
 
 <script>
-import HomePlans from '@/components/HomePlans';
-import MealRecipes from '@/components/MealRecipes';
+import HomePlans from "@/components/HomePlans";
+import MealRecipes from "@/components/MealRecipes";
 
 export default {
-    name: 'menu-view',
-    components: {
-        HomePlans,
-        MealRecipes
-    }
+  name: "menu-view",
+  components: {
+    HomePlans,
+    MealRecipes,
+  },
 };
 </script>
 
