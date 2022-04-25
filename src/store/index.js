@@ -1,10 +1,10 @@
 import Vue from "vue";
 import Vuex from "vuex";
 import axios from "axios";
-import router from "@/router/index";
 import firebase from "firebase/compat/app";
 import "firebase/compat/auth";
-import "firebase/compat/firestore";
+import "firebase/compat/database";
+import router from "@/router/index";
 
 Vue.use(Vuex);
 

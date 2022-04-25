@@ -33,7 +33,7 @@
 
           <v-card-actions v-if="['menu-view'].includes($route.name)">
             <v-btn
-              outline
+              outlined
               block
               color="green"
               @click="showRecipes('keto')"
@@ -72,7 +72,7 @@
 
           <v-card-actions v-if="['menu-view'].includes($route.name)">
             <v-btn
-              outline
+              outlined
               block
               color="green"
               @click="showRecipes('paleo')"
@@ -111,7 +111,7 @@
 
           <v-card-actions v-if="['menu-view'].includes($route.name)">
             <v-btn
-              outline
+              outlined
               block
               color="green"
               @click="showRecipes('vegan')"

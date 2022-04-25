@@ -1,4 +1,4 @@
-import * as firebase from "firebase/app";
+import firebase from "firebase/compat/app";
 import { getAnalytics } from "firebase/analytics";
 
 const config = {
@@ -12,3 +12,4 @@ const config = {
 };
 const app = firebase.initializeApp(config);
 getAnalytics(app);
+export { app };
