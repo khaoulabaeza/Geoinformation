@@ -30,9 +30,44 @@
       <v-btn
         text
         class="hidden-sm-and-down nav-menu"
-        to="/menu"
-        data-cy="menuBtn"
-        >Menu</v-btn
+        to="/accueil"
+        data-cy="accueilBtn"
+        >Accueil</v-btn
+      >
+      <v-btn
+        text
+        class="hidden-sm-and-down nav-menu"
+        to="/offres"
+        data-cy="offresBtn"
+        >Offres</v-btn
+      >
+      <v-btn
+        text
+        class="hidden-sm-and-down nav-menu"
+        to="/annonces"
+        data-cy="annoncesBtn"
+        >Annonces</v-btn
+      >
+      <v-btn
+        text
+        class="hidden-sm-and-down nav-menu"
+        to="/formation"
+        data-cy="formationBtn"
+        >Formation</v-btn
+      >
+      <v-btn
+        text
+        class="hidden-sm-and-down nav-menu"
+        to="/produits"
+        data-cy="produitsBtn"
+        >Produits</v-btn
+      >
+      <v-btn
+        text
+        class="hidden-sm-and-down nav-menu"
+        to="/contact"
+        data-cy="contactBtn"
+        >Contact</v-btn
       >
       <v-spacer class="hidden-sm-and-down"></v-spacer>
       <div v-if="!isAuthenticated" class="hidden-sm-and-down">
@@ -60,10 +95,15 @@ export default {
   name: "AppNavigation",
   data() {
     return {
-      appTitle: "Meal Prep",
+      appTitle: "GéoInformation",
       drawer: false,
       items: [
-        { title: "Menu", url: "/menu" },
+        { title: "Accueil", url: "/accueil" },
+        { title: "Offres", url: "/offres" },
+        { title: "Annonces", url: "/annonces" },
+        { title: "Formation", url: "/formation" },
+        { title: "Produits", url: "/produits" },
+        { title: "Contact", url: "/contact" },
         { title: "Profile", url: "/about" },
         { title: "Sign In", url: "/sign-in" },
         { title: "Join", url: "/join" },

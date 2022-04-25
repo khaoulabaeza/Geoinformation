@@ -24,7 +24,7 @@ const routes = [
     },
   },
   {
-    path: "/menu",
+    path: "/produits",
     name: "menu-view",
     component: () =>
       import(/* webpackChunkName: "menu" */ "../views/MenuView.vue"),

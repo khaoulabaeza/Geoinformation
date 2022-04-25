@@ -10,7 +10,7 @@
         {{ item }}
       </div>
       <v-flex mt-4>
-        <v-btn color="primary" to="/menu">Go To Menu</v-btn>
+        <v-btn color="primary" to="/produits">Go To Menu</v-btn>
       </v-flex>
     </v-layout>
   </v-container>
